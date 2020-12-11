@@ -4,6 +4,7 @@ const circularNavbar = document.querySelector('.circular-navbar');
 const blog = document.querySelector('.blog');
 const navbar = document.querySelector('.navbar');
 
+console.log('Hello');
 //Add the active class
 const addActiveClass = (element) => {
   element.classList.add('active');
