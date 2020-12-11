@@ -17,7 +17,7 @@ body {
   align-items: center;
   overflow-x: hidden;
   color: #222;
-  background: #000;
+  background: #222;
 }
 
 .blog {
@@ -43,6 +43,7 @@ body {
   color: #666;
   font-size: 16px;
   margin-bottom: 30px;
+  font-style: italic;
 }
 
 h4 {
@@ -104,15 +105,15 @@ p {
 
 .navbar {
   position: fixed;
-  bottom: 50px;
-  left: 0;
-  transform: translate(-100%);
+  bottom: 0;
+  left: 30px;
+  transform: translate(-200%);
   transition: all 0.5s linear;
+  transition-delay: 0.1s;
 }
 
 .navbar.active {
-  left: 50px;
-  transform: translate(0%);
+  transform: translate(0);
 }
 
 .navbar li {
@@ -123,15 +124,17 @@ p {
   margin: 40px 15px;
   color: #fff;
   font-weight: 400;
-  transition: all 0.5s linear 0.2s;
+  transition: all 0.3s;
 }
 
 .navbar.active li:nth-of-type(2) {
   transform: translateX(20px);
+  transition-delay: 0.4s;
 }
 
 .navbar.active li:nth-of-type(3) {
   transform: translateX(40px);
+  transition-delay: 0.5s;
 }
 
 .navbar li ion-icon {
